@@ -43,54 +43,7 @@ function input_field($data)
 <html lang="en">
 
 <head>
-    <style>
-        body {
-            background-image: url("../assignmentPHP1/images/blur-bg-blurred.jpg");
-            background-size: cover;
-            background-attachment: fixed;
-
-        }
-
-        .page {
-            background-color: rgba(0, 0, 0, 0.6);
-            border-radius: 8px;
-        }
-
-        .mycard {
-            background-color: rgba(158, 154, 154, 0.2);
-            margin-left: 15px;
-            margin-top: 10px;
-            padding: 5px;
-            height: 36px;
-            border-radius: 8px;
-        }
-
-        label {
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .my-input {
-            background-color: transparent;
-            color: orange;
-            font-size: 18px;
-            outline: none;
-            border: none;
-            font-weight: 500;
-            height: 26px;
-        }
-
-        .my-input:focus,
-        .my-input:visited {
-            background-color: transparent;
-            color: orange;
-            font-size: 18px;
-            outline: none;
-            border: none;
-            font-weight: 500;
-            height: 26px;
-        }
-    </style>
+    <?php include("style.php"); ?>
     <?php include("header.php"); ?>
 </head>
 
@@ -123,7 +76,7 @@ function input_field($data)
                         <label for="inputEmail3" class="text-warning ">Name</label>
                     </div>
                     <div class="col-sm-5 mycard">
-                        <input type=" text" class="my-input" name="EmpName" value="<?php echo $EmpName ?>" />
+                        <input type=" text" class="my-input" name="EmpName" value="<?php echo $EmpName ?>" required />
                     </div>
                 </div>
                 <div class="row d-flex flex-row justify-content-center mt-2 mb-3">
